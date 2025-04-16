@@ -1,0 +1,31 @@
+server:
+  port: 8080
+
+database:
+  host: localhost
+  port: 3306
+  user: root
+  password: mysql
+  name: RAG
+
+redis:
+  addr: localhost:6379
+  password: ""
+  db: 0
+
+kafka:
+  addr: localhost:9092
+  topic: file_info_topic
+
+jwt:
+  secret: my_jwt_secret
+  expire_hours: 24
+
+log:
+  file: app.log
+
+minio:
+  endpoint: localhost:9000
+  access_key: my_access_key
+  secret_key: my_secret_key
+  use_ssl: false
